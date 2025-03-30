@@ -65,7 +65,7 @@ public class TomatoCaughtState : ITomatoState
         // Evita que siga rodando con física
 
         // Deshabilitar colisión para evitar que sea atrapado dos veces
-        tomate.GetComponent<Collider2D>().enabled = false;
+        tomate.gameObject.layer = LayerMask.NameToLayer("Ingrediente");
 
         // Activar o agregar ItemManager para que siga al jugador
         ItemManager itemManager = tomate.GetComponent<ItemManager>();
@@ -74,6 +74,8 @@ public class TomatoCaughtState : ITomatoState
             itemManager = tomate.gameObject.AddComponent<ItemManager>();
         }
         itemManager.isPickedUp = true;
+
+
     }
 
     public void UpdateState(TomateRodante tomate)

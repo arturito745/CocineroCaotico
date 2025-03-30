@@ -5,15 +5,18 @@ TagManager:
   serializedVersion: 3
   tags:
   - Wall
+  - Pot
+  - Tomate
+  - Huevo
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ingrediente
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Pot
   - 
   - 
   - 
